@@ -1,0 +1,229 @@
+:root {
+    --bg: #000;
+    --primary: #fff;
+    --secondary: #ccc;
+    --action: #ff4655;
+    --action-hover: #fff;
+    --success: #00ff00;
+    --t1: #66c2a9;
+    --t1sec: #3f7975;
+    --t1ter: #2a4c48;
+    --t2: #f05c57;
+    --t2sec: #ff4655;
+    --t2ter: #a33e3b;
+
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+* {
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+    text-align: left;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding: 60px 0 0 0 ;
+}
+
+.title2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding: 10px 0 30px 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #070707;
+    height: 100vh;
+}
+
+.teams {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.team {
+    background: blue;
+}
+
+.team li {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    padding-left: 30px;
+    background: red;
+    gap: 10px;
+}
+
+.team .teamname {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.team .captain {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    background: goldenrod;
+    border: 3px solid gold;
+}
+
+.team1 li {
+    background: var(--t1sec);
+    border: 2px solid var(--t1ter);
+}
+
+.team1 .teamname {
+    background: var(--t1);
+}
+
+.team2 li {
+    background: var(--t2sec);
+    border: 2px solid var(--t2ter);
+}
+
+.team2 .teamname {
+    background: var(--t2);
+}
+
+.teamname {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+button {
+    margin: 18px 0;
+    padding: 10px 200px;
+    outline: 1px solid var(--secondary);
+    border: 10px solid var(--bg);
+    background: var(--action);
+    color: var(--primary);
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: var(--action-hover);
+    color: #000;
+    transition: .3s;
+}
+
+.t1 {
+    background: var(--t1);
+    border: 10px solid var(--t1ter);
+}
+
+.t2 {
+    background: var(--t2);
+    border: 10px solid var(--t2ter);
+}
+
+.maps {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    height: 378px;
+
+}
+
+.map {
+    background: #000;
+    height: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    border: 10px goldenrod solid;
+}
+
+.banned {
+    color: var(--action);
+    border: 10px var(--action) solid;
+    transition: .5s;
+}
+
+.ascent {
+    background: url("img/ascent.webp");
+    background-size: cover;
+}
+
+.bind {
+    background: url("img/bind.webp");
+    background-size: cover;
+}
+
+.icebox {
+    background: url("img/icebox.webp");
+    background-size: cover;
+}
+
+.haven {
+    background: url("img/haven.webp");
+    background-size: cover;
+}
+
+.split {
+    background: url("img/split.webp");
+    background-size: cover;
+}
+
+.breeze {
+    background: url("img/breeze.webp");
+    background-size: cover;
+}
+
+.sunset {
+    background: url("img/sunset.webp");
+    background-size: cover;
+}
+
+.fracture {
+    background: url("img/fracture.webp");
+    background-size: cover;
+}
+
+.lotus {
+    background: url("img/lotus.webp");
+    background-size: cover;
+}
+
+.pearl {
+    background: url("img/pearl.webp");
+    background-size: cover;
+}
